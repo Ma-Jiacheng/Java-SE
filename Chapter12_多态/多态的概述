@@ -1,0 +1,35 @@
+面向对象的三大特征：封装性、继承性、多态性
+
+继承（extends）和实现（implements），是多态性的前提
+
+引入：
+    （子类）学生-->人类<--员工（子类）
+    （对象）小明同学：是学生也是人类，拥有学生、人类两种形态，一个对象拥有多种形态，这就是多态性
+
+使用多态的好处：
+    public class 员工类(){
+        work();     //抽象方法
+    }
+
+    public class 讲师类 extends 员工类(){
+        public void work(){
+            讲课;
+        }
+    }
+
+    public class 助教类 extends 员工类(){
+        public void work(){
+            辅导;
+        }
+    }
+如果不使用多态，只使用子类的写法为：
+    Teacher one = new Teacher();
+    one.work;   //讲课
+    Assistant two = new Assistant();
+    two.work    //辅导
+现在唯一要做的是调用work()方法，对其它的功能不关心，使用多态的写法  ：
+    Employee one = new Teacher();
+    one.work;   //讲课
+    Employee two = new Assistant();
+    two.work;   //辅导
+好处：无论右边 new 的是哪个子类对象，等号左边都不用变化
