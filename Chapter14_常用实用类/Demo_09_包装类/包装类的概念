@@ -1,0 +1,14 @@
+包装类：
+    基本数据类型使用起来十分方便，但是没有对应的方法来操作这些数据，所以可以使用一个类，把基本数据类型包装起来，这个类就叫做包装类。
+    在包装类中，可以定义一些方法来操作基本类型的数据
+
+基本类型对应的包装类（包装类都位于java.long包中）：
+    1.byte----Byte
+    2.short----Short
+    3.int----Integer 【特殊】
+    4.long----Long
+    5.float----Float
+    6.double----Double
+    7.char----Character 【特殊】
+    8.boolean----Boolean
+
